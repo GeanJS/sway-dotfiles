@@ -1,6 +1,6 @@
 # Meus Dotfiles
 
-Repositório com minhas configurações do Sway, Zsh, Neovim, e mais.
+Repositório com minhas configurações do Sway.
 
 ## Instalação
 

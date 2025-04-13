@@ -1,0 +1,7 @@
+@import "mocha"
+
+configuration {
+    show-icons: true;
+    drun-display-format: "{icon} {name}";
+    prompt: "Applications:";
+}

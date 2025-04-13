@@ -1,0 +1,165 @@
+* {
+  rosewater: #f5e0dc;
+  flamingo: #f2cdcd;
+  pink: #f5c2e7;
+  mauve: #cba6f7;
+  red: #f38ba8;
+  maroon: #eba0ac;
+  peach: #fab387;
+  yellow: #f9e2af;
+  green: #a6e3a1;
+  teal: #94e2d5;
+  sky: #89dceb;
+  sapphire: #74c7ec;
+  blue: #89b4fa;
+  lavender: #b4befe;
+  text: #cdd6f4;
+  subtext1: #bac2de;
+  subtext0: #a6adc8;
+  overlay2: #9399b2;
+  overlay1: #7f849c;
+  overlay0: #6c7086;
+  surface2: #585b70;
+  surface1: #45475a;
+  surface0: #313244;
+  base: #1e1e2e;
+  mantle: #181825;
+  crust: #11111b;
+  }
+
+* {
+  selected-active-foreground:  @background;
+  lightfg:                     @text;
+  separatorcolor:              @foreground;
+  urgent-foreground:           @red;
+  alternate-urgent-background: @lightbg;
+  lightbg:                     @mantle;
+  background-color:            transparent;
+  border-color:                @foreground;
+  normal-background:           @background;
+  selected-urgent-background:  @red;
+  alternate-active-background: @lightbg;
+  spacing:                     2;
+  alternate-normal-foreground: @foreground;
+  urgent-background:           @background;
+  selected-normal-foreground:  @lightbg;
+  active-foreground:           @blue;
+  background:                  @base;
+  selected-active-background:  @blue;
+  active-background:           @background;
+  selected-normal-background:  @lightfg;
+  alternate-normal-background: @lightbg;
+  foreground:                  @text;
+  selected-urgent-foreground:  @background;
+  normal-foreground:           @foreground;
+  alternate-urgent-foreground: @red;
+  alternate-active-foreground: @blue;
+  font: "Maple mono 16";
+}
+
+element {
+    padding: 4px;
+    spacing: 5px;
+    background-color: @background;
+    text-color: @foreground;
+    cursor: pointer;
+    border: 0;
+}
+
+element normal.normal,
+element selected.normal,
+element normal.urgent,
+element selected.urgent,
+element normal.active,
+element selected.active,
+element alternate.normal,
+element alternate.urgent,
+element alternate.active {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+window {
+    padding:          5;
+    background-color: @background;
+    border:           0;
+}
+mainbox {
+    padding: 0;
+    border:  0;
+}
+message {
+    padding:      1px ;
+    border-color: @separatorcolor;
+    border:       2px dash 0px 0px ;
+}
+textbox {
+    text-color: @foreground;
+}
+listview {
+    padding:      2px 0px 0px ;
+    scrollbar:    true;
+    border-color: @separatorcolor;
+    spacing:      2px ;
+    fixed-height: 0;
+    border:       0px dash 0px 0px ;
+}
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+    handle-color: @normal-foreground;
+}
+sidebar {
+    border-color: @separatorcolor;
+    border:       2px dash 0px 0px ;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+button selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: Gray;
+}
+num-rows {
+    expand:     false;
+    text-color: Gray;
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: Gray;
+}
+inputbar {
+    padding:    5px ;
+    spacing:    0px ;
+    text-color: @normal-foreground;
+    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+entry {
+    text-color:        @normal-foreground;
+    cursor:            text;
+    spacing:           0;
+}
+prompt {
+    spacing:    0;
+    text: "Applications";
+    text-color: @blue;
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: inherit;
+}
