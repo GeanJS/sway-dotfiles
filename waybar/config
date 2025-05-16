@@ -2,62 +2,40 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "margin": 0,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode"
+        "sway/workspaces"
     ],
     "modules-center": [
-        "sway/window"
-    ],
-    "modules-right": [
-        "pulseaudio",
-        "network",
-        "battery",
         "clock"
     ],
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "format": "{icon}",
-        "format-icons": {
-            "1": "󰎤",
-            "2": "󰎧",
-            "3": "󰎪",
-            "4": "󰎭",
-            "5": "󰎱",
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "battery",
+        "tray"
+    ],
+    "backlight": {
+        "format": "  {percent}%",
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set -5%"
     },
     "clock": {
-        "format": "󰥔 {:%H:%M - %d/%m}",
-        "tooltip-format": "{:%A, %d de %B de %Y}",
-        "interval": 60
+        "format": " {:%H:%M}",
+        "tooltip-format": "{:%A, %d de %B de %Y}"
     },
     "pulseaudio": {
         "format": " {volume}%",
-        "format-muted": "󰝟 Muted",
-        "on-click": "pavucontrol"
-    },
-    "network": {
-        "format-wifi": "󰖩 {essid}({signalStrength}%)",
-        "format-ethernet": "󰈁 {ifname}",
-        "format-disconnected": "󰖪 Offline"
+        "format-muted": " Mutado",
+        "tooltip": false
     },
     "battery": {
         "format": "{icon} {capacity}%",
         "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰁹"
-        ],
-        "interval": 30
-    },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     }
 }

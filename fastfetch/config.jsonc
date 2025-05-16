@@ -1,0 +1,67 @@
+{
+    "logo": {
+        "type": "none"
+    },
+    "display": {
+        "separator": ""
+    },
+    "modules": [
+        {
+            "type": "os",
+            "key": "    OS        ║",
+            "format": " {2}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "shell",
+            "key": "    Shell     ║ ",
+            "format": "zsh",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "    Terminal  ║ ",
+            "format": "{1}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "  󰍹  WM        ║ ",
+            "format": "{0}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": " "
+        },
+        {
+            "type": "cpu",
+            "key": "    CPU       ║ ",
+            "format": "{0}",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "  󰊴  GPU       ║ ",
+            "format": "{2}",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "    Memory    ║ ",
+            "format": "{1} / {2} ({3})",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "    Disk      ║ ",
+            "format": "{1} / {2} ({3})",
+            "keyColor": "green"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 20,
+            "symbol": "circle"
+        }
+    ]
+}

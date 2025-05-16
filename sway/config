@@ -23,7 +23,7 @@ set $menu rofi -show drun
 # GTK
 exec_always --no-startup-id xsettingsd
 # Wallpaper
-exec_always swaybg -i /home/geanjair/.config/backgrounds/call-it-a-day.jpg -m fill
+exec_always swaybg -i /home/geanjair/.config/backgrounds/5m5kLI9.png -m fill
 #
 # Example configuration:
 #
@@ -209,7 +209,8 @@ bindsym $mod+r mode "resize"
 
 #VISUAL SETTING
 gaps inner 5
-default_border pixel 0
+default_border pixel 3
+client.focused          #89b482 #89b482 #282828 #d4be98 #89b482
 
 # Cursor
 set $cursor_theme catppuccin-mocha-light-cursors
